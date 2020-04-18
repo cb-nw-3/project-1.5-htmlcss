@@ -1,0 +1,50 @@
+html {
+  font-family: "Lato", sans-serif;
+}
+body {
+  margin: 0;
+}
+header {
+  display: flex;
+}
+.left-header {
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+  padding-top: 10px;
+}
+.half-circle {
+  width: 15px;
+  height: 30px;
+  background-color: black;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 1px solid black;
+  border-bottom: 0;
+}
+.left-header p {
+  padding-left: 10px;
+  font-weight: bold;
+}
+.right-header,
+.menu-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.corner {
+  position: relative;
+  width: 200px;
+  height: 400px;
+  left: 50px;
+  top: -250px;
+
+  background: rgba(91, 193, 238, 0.5);
+  transform: rotate(-45deg);
+  z-index: 1;
+}
+.menu-button {
+  top: 30px;
+  right: 20px;
+  z-index: 2;
+}
