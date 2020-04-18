@@ -5,19 +5,77 @@ body {
 }
 
 main {
-    height: 100vh;
+    /* min-height: 100vh; */
     margin: 15vh 15vw;
-    border: 5px solid goldenrod;
+    /* border: 5px solid goldenrod; */
     display: flex;
     flex-direction: column;
     align-items: center;
     /* justify-content: center; */
 }
 
+
+
+/* *********************************************** */
+/* ******************* NAVBAR ******************** */
+/* *********************************************** */
+
 .nav-container {
-    margin: 0 5vw;
-    height: 10vh;
-    border: 5px solid goldenrod;
+    position: relative;
+    margin-left: 5vw;
+    min-height: auto;
+    /* border: 5px solid goldenrod; */
+    
+    align-content: center;
+    display: flex;
+    z-index: 1;
+    
+}
+
+.half-circle {
+    /* position: absolute; */
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    transform: translateX(-30px);
+    background: #000000;
+}
+
+.nav-start {
+    display: flex;
+    width: 50%;
+    overflow: hidden;
+    /* border: 5px dashed red; */
+}
+
+.nav-end {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50%;
+    padding-right: 20px;
+    /* border: 5px dashed red; */
+    position: relative;
+}
+
+.nav-end > button {
+    background: none;
+    border: none;
+    z-index: 3;
+}
+
+.corner {
+    position: absolute;
+    width: 150px;
+    height: 350px;
+    background: rgba(91, 193, 238, 0.5);
+    transform: rotate(-45deg) ;
+    z-index:2;
+}
+
+.nav-start > h1 {
+    transform: translateX(-10px);
 }
 
 /* *********************************************** */
@@ -249,3 +307,40 @@ section {
     line-height: 24px;
     color: #000000;
 }
+
+
+/* *********************************************** */
+/* ******************** FOOTER ******************* */
+/* *********************************************** */
+
+footer {
+    display: flex;
+    align-content: center;
+    margin:0 5vw;
+    min-height: auto;
+    /* border: 5px solid goldenrod; */
+    align-items: baseline;
+}
+
+footer > ul {
+    display: flex;
+    position: relative;
+    flex: 1;
+}
+
+footer > ul li, a {
+    padding: 10px;
+    list-style-type: none;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.footer-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
