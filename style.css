@@ -65,8 +65,8 @@ form {
 section {
     margin: 5vh 0;
     border: 5px dashed goldenrod;
-    height: 40vh;
-    width: 95%;
+    /* min-height: 40vh; */
+    /* width: 95%; */
     display: flex;
     justify-content: center;
 }
@@ -148,3 +148,67 @@ section {
 
 }
 
+.cards2 {
+    margin: 5px;
+    width: 282px;
+    height: 282px;
+    background: #5EB9AF;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.cards2 > h4 {
+    margin-top: 46px;
+    width: 186.82px;
+    height: 28.2px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.cards2 > img {
+    width: 150%;
+    height: 150%;
+    margin: 0 auto;
+    position: absolute;
+    top: 38%;
+}
+
+.cards3 {
+    text-align: center;
+    /* border: 2px dashed red; */
+    display: flex;
+    flex-direction: column;
+}
+
+.cards3-1a {
+    margin: 5px;
+    width: 200px;
+    height: 173px;
+    background: #3A8EEF;
+    border-radius: 20px;
+}
+
+.cards3-1b {
+    margin: 5px;
+    width: 200px;
+    height: 96px;
+    background: #FA65AD;
+    border-radius: 20px;
+}
+
+.cards3 > h4 {
+    width: 126px;
+    height: 22px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
