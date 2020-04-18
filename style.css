@@ -192,6 +192,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .cards1-1a > h4 {
@@ -200,8 +201,14 @@ section {
     font-size: 20px;
     line-height: 24px;
     color: #000000;
+
 }
 
+.cards1-1a > img {
+    position: absolute;
+    right: 10%;
+    top: 0;
+}
 .cards1-1b {
     margin: 5px;
     width: 181px;
@@ -211,6 +218,15 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.cards1-1b > img {
+    position: absolute;
+    transform: rotate(-45deg);
+    bottom: 0;
+    right: 0;
 }
 
 .cards1-1b > h4 {
@@ -231,6 +247,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .cards1-2a > h4 {
@@ -240,7 +258,13 @@ section {
     font-size: 20px;
     line-height: 24px;
     color: #000000;
+}
 
+.cards1-2a > img {
+    position: absolute;
+    transform: rotate(0deg);
+    top: 60%;
+    right: 5%;
 }
 
 .cards2 {
@@ -280,25 +304,52 @@ section {
     /* border: 2px dashed red; */
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .cards3-1a {
+    display: flex;
+    justify-content: center;
     margin: 5px;
     width: 200px;
     height: 173px;
     background: #3A8EEF;
     border-radius: 20px;
+    position: relative;
+    overflow: hidden;
 }
 
+.cards3-1a > h4 {
+    padding-top: 15px;
+}
+
+.cards3-1a > img {
+    position: absolute;
+    top: 50%;
+    right: 20%;
+}
+
+
 .cards3-1b {
+    display: flex;
+    justify-content: center;
     margin: 5px;
     width: 200px;
     height: 96px;
     background: #FA65AD;
     border-radius: 20px;
+    position: relative;
+    overflow: hidden;
 }
 
-.cards3 > h4 {
+.cards3-1b > img {
+    position: absolute;
+    transform: rotate(180deg);
+    left: 0;
+    bottom: 0;
+}
+
+.cards3 h4 {
     width: 126px;
     height: 22px;
     font-style: normal;
