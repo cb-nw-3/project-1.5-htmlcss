@@ -1,0 +1,150 @@
+
+body {
+    margin: 0;
+    font-family: "Lato";
+}
+
+main {
+    height: 100vh;
+    margin: 15vh 15vw;
+    border: 5px solid goldenrod;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.nav-container {
+    margin: 0 5vw;
+    height: 10vh;
+    border: 5px solid goldenrod;
+}
+
+/* *********************************************** */
+/* ******************* TITLE ********************* */
+/* *********************************************** */
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title > h3 {
+    margin: 0;
+    color: #666666;
+    font-size: 24px;
+    font-style: normal;
+    line-height: 29px;
+    font-weight: 500;
+}
+
+.title > h1 {
+    margin: 0;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 72px;
+    color: #000000;
+}
+
+/* *********************************************** */
+/* ***************** SEARCH BAR ****************** */
+/* *********************************************** */
+
+form {
+    margin: 15vh 0;
+    border: 5px dashed goldenrod;
+}
+
+/* *********************************************** */
+/* ******************** CARDS ******************** */
+/* *********************************************** */
+
+section {
+    margin: 5vh 0;
+    border: 5px dashed goldenrod;
+    height: 40vh;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+}
+
+.cards {
+    flex: 1;
+    text-align: center;
+    border: 5px solid red;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.cards1 {
+    text-align: center;
+    /* border: 2px dashed red; */
+    display: flex;
+    flex-direction: row;
+}
+
+.cards1-1a { 
+    margin: 5px;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    background: #5BC1EE;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards1-1a > h4 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.cards1-1b {
+    margin: 5px;
+    width: 181px;
+    height: 120px;
+    background: #FA7565;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards1-1b > h4 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+
+.cards1-2a {
+    width: 313px;
+    height: 150px;
+    margin: 5px;
+    background: #98D1D8;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards1-2a > h4 {
+    
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+
+}
+
