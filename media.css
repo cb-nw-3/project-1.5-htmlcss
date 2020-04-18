@@ -1,0 +1,9 @@
+@media (max-width: 920px) {
+    /* html {
+        background-color: mistyrose;
+    } */
+    section {
+        /* background-color: goldenrod; */
+        flex-wrap: wrap;
+    }   
+}
