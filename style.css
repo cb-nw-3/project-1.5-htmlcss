@@ -1,0 +1,341 @@
+*{
+    font-family: 'lato', sans-serif;
+    color: #000000;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* header */
+
+header{
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 30px;
+    height: 60px;
+    background: #000000;
+}
+
+.logo {
+    border-bottom-right-radius: 60px;
+    border-top-right-radius: 60px;
+    animation: 5s linear infinite rotate;
+}
+
+nav.mobile-nav{
+    height: 75px;
+    width: 75px;
+    padding: 10px;
+    background: linear-gradient(to top right, #fff 0%, #fff 50%, #add8e6 50%, #add8e6 50%);
+}
+
+.menu-icon{
+    width: 30px;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+}
+
+/* logo animation */
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.title{
+    display: flex;
+    align-items: center;
+}
+
+.name{
+    padding-left: 20px;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+/* body */
+body{
+    text-align: center;
+}
+
+body>p{
+    font-size: 24px;
+}
+
+h1{
+    font-size: 54px;
+    margin-top: 20px
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 0 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.16);
+    border-radius: 60px;
+    width: 80%;
+    max-width: 500px;
+}
+    
+.text{
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 90%;
+}
+
+.search-button{
+    background: #000000;
+    border-radius: 60px;
+    padding: 10px 30px;
+    color: white;
+}
+
+.cloud {
+    grid-area: cloud;
+}
+.analytics {
+    grid-area: analytics;
+}
+.crm {
+    grid-area: crm;
+}
+.consultation {
+    grid-area: consultation;
+}
+.ui {
+    grid-area: ui;
+}
+.web {
+    grid-area: web;
+}
+
+.cards{
+    display: grid;
+    grid-template-areas: 
+    "cloud"
+    "analytics"
+    "crm"
+    "consultation"
+    "ui"
+    "web";
+}
+
+@media (min-width: 800px){
+    .cards {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "cloud analytics"
+        "crm crm"
+        "consultation consultation"
+        "ui web";
+    }
+}
+
+@media (min-width: 1200px){
+    .cards{
+        width: 1200px;
+        height: 280px;
+        margin: 30px auto;
+        grid-template-columns: 15% 23% 36% 26%;
+        grid-template-rows: 45% 20% 35%;
+    }
+}
+
+.cards div{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    padding-top: 45px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cards div img{
+    position: absolute;
+}
+
+.cloud{
+    background: #5BC1EE;
+}
+
+@media(min-width: 1200px){
+    .cloud{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+}
+
+.cloud>.icons{
+    top: 0;
+    right: 0;
+}
+
+.analytics{
+    background: #FA7565;
+}
+@media(min-width: 1200px){
+    .analytics{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+}
+
+.analytics>.icons{
+    top: 20px;
+    right: 0;
+    transform: rotateZ(320deg);
+}
+
+@media (min-width: 1200px){
+    .analytics>.icons{
+        top: 75px;
+    }
+}
+
+.crm {
+    background: #98D1D8;
+}
+
+@media(min-width: 1200px){
+    .crm{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+}
+
+.crm>.icons{
+    top: 10px;
+    right: 110px;
+}
+
+@media (min-width: 1200px){
+    .crm>.icons{
+        top: 90px;
+        right: 15px;
+    }
+}
+
+.consultation{
+    background: #5EB9AF;
+}
+
+@media(min-width: 1200px){
+    .consultation{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+}
+
+.consultation>.icons{ 
+    width: 110px;
+    top: 0;
+    left: 50px;
+}
+@media (min-width: 1200px){
+    .consultation>.icons{
+        top: 120px;
+        width: 250px;
+        right: 15px;
+    }
+}
+
+.ui{
+    background: #3A8EEF;
+}
+
+@media(min-width: 1200px){
+    .ui{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+}
+
+.ui>.icons{
+    bottom: 40px;
+}
+
+.web{
+    background: #FA65AD;
+}
+
+@media(min-width: 1200px){
+    .web{
+        grid-area: 3 / 4 / 4 / 5;
+    }
+}
+
+@media(min-width: 1200px){
+    .cards div.web{
+        padding-top: 10px;
+    }
+}
+
+.web>.icons{
+    bottom: 0;
+    left: 0;
+    transform: rotateZ(180deg);
+}
+
+
+/* footer */
+.foot{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    flex-wrap: wrap;
+}
+
+footer ul{
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0;
+}
+footer a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul.social-media{
+    display: flex;
+}
+
+li:after{
+    content: ' | ';
+    padding: 10px;
+}
+
+li:last-child:after{
+    content: '';
+}
