@@ -1,4 +1,5 @@
 
+
 body {
     margin: 0;
     font-family: "Lato";
@@ -6,7 +7,7 @@ body {
 
 main {
     /* min-height: 100vh; */
-    margin: 15vh 15vw;
+    /* margin: 15vh 15vw; */
     /* border: 5px solid goldenrod; */
     display: flex;
     flex-direction: column;
@@ -54,25 +55,41 @@ main {
     align-items: center;
     justify-content: center;
     margin-left: 50%;
-    padding-right: 20px;
     /* border: 5px dashed red; */
     position: relative;
 }
 
-.nav-end > button {
+/* .corner > button {
     background: none;
     border: none;
     z-index: 3;
+} */
+
+.corner > img {
+    padding-top: 20px;
+    padding-right: 20px;
 }
 
 .corner {
+    display: flex;
+    /* padding-top: 20px; */
+    flex-direction: column;
+    align-items: flex-end;
+    width: 180px;
+    height: 100px;
+    background: linear-gradient(to top right, white 0%, white 50%,rgba(91, 193, 238, 0.5) 50%, rgba(91, 193, 238, 0.5) 50%); 
+}
+
+/* .corner {
     position: absolute;
-    width: 150px;
-    height: 350px;
+    padding: 20px;
+    width: 100px;
+    height: 100px;;
     background: rgba(91, 193, 238, 0.5);
     transform: rotate(-45deg) ;
-    z-index:2;
-}
+    z-index:2;  
+} 
+*/
 
 .nav-start > h1 {
     transform: translateX(-10px);
